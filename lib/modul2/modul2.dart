@@ -45,7 +45,6 @@ class Modul2Page extends StatelessWidget {
     );
   }
 
-  // Helper untuk membuat kotak icon + teks
   Widget _iconBox(IconData icon, Color color, String label) {
     return Container(
       width: 100,

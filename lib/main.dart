@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:modul_2/modul1/modul1.dart';
 import 'package:modul_2/modul3/modul3.dart';
 import 'package:modul_2/modul4/modul4.dart';
 import 'modul2/modul2.dart';
@@ -24,6 +25,17 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(title: Text('Menu Modul')),
       body: Column(
         children: [
+          ElevatedButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Modul1Page()),
+              );
+            },
+            child: Text('Modul 1'),
+          ),
+
+          SizedBox(height: 16),
           ElevatedButton(
             onPressed: () {
               Navigator.push(

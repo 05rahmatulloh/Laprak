@@ -25,8 +25,7 @@ class Modul3Page extends StatelessWidget {
         padding: EdgeInsets.all(20),
         child: Column(
           children: [
-            SizedBox(height: 150), // suhu saat ini agak ke atas
-            // Suhu saat ini
+            SizedBox(height: 150),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -38,8 +37,7 @@ class Modul3Page extends StatelessWidget {
               ],
             ),
 
-            SizedBox(height: 150), // beri jarak ke bawah sebelum suhu harian
-            // Suhu harian sedikit naik dari bawah
+            SizedBox(height: 150),
             Column(
               children: [
                 SizedBox(height: 100),
