@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:modul_2/modul3/modul3.dart';
+import 'package:modul_2/modul4/modul4.dart';
 import 'modul2/modul2.dart';
 
 void main() {
@@ -44,16 +45,16 @@ class HomePage extends StatelessWidget {
             child: Text('Modul 3'),
           ),
 
-          // SizedBox(height: 16),
-          // ElevatedButton(
-          //   onPressed: () {
-          //     Navigator.push(
-          //       context,
-          //       MaterialPageRoute(builder: (context) => Modul4Page()),
-          //     );
-          //   },
-          //   child: Text('Modul 4'),
-          // ),
+          SizedBox(height: 16),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Modul4Page()),
+              );
+            },
+            child: Text('Modul 4'),
+          ),
         ],
       ),
     );
