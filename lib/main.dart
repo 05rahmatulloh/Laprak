@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:modul_2/modul1/modul1.dart';
-import 'package:modul_2/modul3/modul3.dart';
-import 'package:modul_2/modul4/modul4.dart';
+import 'package:modulAll/modul1/modul1.dart';
+import 'package:modulAll/modul3/modul3.dart';
+import 'package:modulAll/modul4/modul4.dart';
 import 'modul2/modul2.dart';
 
 void main() {
