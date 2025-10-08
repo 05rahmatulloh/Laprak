@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:modulAll/modul1/modul1.dart';
+import 'package:modulAll/modul10/practikum/modul10prac.dart';
 import 'package:modulAll/modul2/modul2.dart';
 import 'package:modulAll/modul3/modul3.dart';
 import 'package:modulAll/modul4/modul4.dart';
@@ -163,6 +164,16 @@ class HomePage extends StatelessWidget {
               );
             },
             child: const Text('Modul 9  tugas'),
+          ),
+          const SizedBox(height: 20),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Modul10prac()),
+              );
+            },
+            child: const Text('Modul 10  practikum'),
           ),
         ],
       ),
