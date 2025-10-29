@@ -5,6 +5,8 @@ import 'package:modulAll/modul2/modul2.dart';
 import 'package:modulAll/modul3/modul3.dart';
 import 'package:modulAll/modul4/modul4.dart';
 import 'package:modulAll/modul5/modul5.dart';
+import 'package:modulAll/modul5/tugasmodul5.dart';
+import 'package:modulAll/modul6/modul6.dart';
 import 'package:modulAll/modul7/modul7.dart';
 import 'package:modulAll/modul7/tujuan.dart';
 import 'package:modulAll/modul8/Practikum/home.dart';
@@ -32,6 +34,7 @@ class MyApp extends StatelessWidget {
         '/modul7': (context) => Modul7(), // contoh route langsung ke Modul7
         '/tujuan': (context) => const TujuanPage(),
          '/modul8': (context) => const HomeModul8(),
+        '/modul6': (context) => const Modul6(),
         TujuanModul8.routeName: (context) => const TujuanModul8(),
           '/modul8practikum': (context) => const Homemodul8practikum(),
         Tujuanmodul8practikum.routeName: (context) => const Tujuanmodul8practikum(),
@@ -98,13 +101,24 @@ class HomePage extends StatelessWidget {
             },
             child: const Text('Modul 5'),
           ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => TugasPage5()),
+              );
+            },
+            child: const Text('Modul 5 tugas'),
+          ),
+      
           const SizedBox(height: 20),
           ElevatedButton(
             onPressed: () {
-              Navigator.pushNamed(context, '/modul7'); // pakai route
+              Navigator.pushNamed(context, '/modul6'); // pakai route
             },
-            child: const Text('Modul 7'),
+            child: const Text('Modul 6'),
           ),
+          
           const SizedBox(height: 20),
           ElevatedButton(
             onPressed: () {
@@ -175,6 +189,7 @@ class HomePage extends StatelessWidget {
             },
             child: const Text('Modul 10  practikum'),
           ),
+          
         ],
       ),
     );
