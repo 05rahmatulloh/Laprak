@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:modulAll/modul7/Materialroute/tujuan.dart';
-import 'package:modulAll/modul7/tujuan.dart';
 
 class Modul7Material extends StatelessWidget {
   const Modul7Material({super.key});
